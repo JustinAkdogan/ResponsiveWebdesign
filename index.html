@@ -25,8 +25,8 @@
 <section id="main">
     <article>
         <h2>Hauptkontent</h2>
-        <img src="src/img/apartments.jpg" class="apartments"></img>
-        <img src="src/img/arrow.png"></img>
+        <img src="src/img/apartments_0.jpg" id="images" />
+        <img src="src/img/arrow.png"      id="next" />
         <p>Im Laufe der nächsten Jahre begann sich nicht nur die akademische Welt für Google zu interessieren, sondern auch Investoren im Silicon Valley wurden auf die Suchmaschine aufmerksam. Im August 1998 stellte Andreas von Bechtolsheim, einer der Gründer von Sun Microsystems, Brin und Page einen Scheck über 100.000 $ aus. Google Inc. wurde offiziell registriert. Dank dieser Investition zog das neu eingetragene Unternehmen aus dem Studentenwohnheim in sein erstes Büro – die Garage von Susan Wojcicki (Mitarbeiterin Nr. 16 und aktuell CEO von YouTube) im kalifornischen Menlo Park. Klobige Desktop-Computer, eine Tischtennisplatte und leuchtend blaue Auslegware bestimmten nun die Arbeit von den frühen Morgen- bis in die späten Abendstunden. Die Tradition einer farbenfrohen Arbeitsumgebung hält bis heute an.</p>
     </article>
     <aside>
@@ -60,4 +60,14 @@
         <li>Bugs sind undokumentierte Features</li>
     </ul>
 </footer>
+<script>
+    var counter = 0;
+    $("#next").click(function(){
+        counter++;
+        if(counter > 5) {
+            counter = 0;
+        }
+            document.getElementById('images').src = 'src/img/apartments_' + counter + '.jpg';
+    });
+</script>
 </html>

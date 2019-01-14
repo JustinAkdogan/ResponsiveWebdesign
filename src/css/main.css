@@ -1,0 +1,47 @@
+/* General Style */
+
+body{
+    background-color: #d8d8d8;
+    font-size: 100%; /* Vielleicht auch im Header/Footer nötig */
+    margin: 0em;
+    padding: 0em;
+}
+
+h1{
+    font-size: 2.5em;
+    line-height: 3.8em; /* Vertikaler Abstand */
+    font-family: Helvetica;
+    font-weight: 100; /* Textdicke */
+    color: #5790f2;
+    margin: 0em; /* Abstand zum Eltern oder Nachbarselement*/
+}
+
+h2{
+    font-size: 1.5em;
+    line-height: 1.8em; /* Vertikaler Abstand */
+    font-family: Helvetica;
+    font-weight: 100; /* Textdicke */
+    color: #5790f2;
+    margin: 0em; /* Abstand zum Eltern oder Nachbarselement*/
+    padding: 1.25em; /* Horizontaler sowie Vertikaler Abstand zu Eltern oder Nachbarselementen */
+    text-align: left;
+}
+
+p{
+    line-height: 1.25em; /* Vertikaler Abstand */
+    font-family: Helvetica;
+    font-weight: 100; /* Textdicke */
+    color: black;
+    margin: 0em; /* Abstand zum Eltern oder Nachbarselement*/
+    padding: 1.25em; /* Horizontaler sowie Vertikaler Abstand zu Eltern oder Nachbarselementen */
+    text-align: justify;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+
+}

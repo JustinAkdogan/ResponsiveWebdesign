@@ -15,7 +15,7 @@
     <nav class="nav">
         <ul>
             <li><a href="index.html" class="active">Index</a></li>
-            <li><a href="index.html">Inde</a></li>
+            <li><a href="?page=approach">Anfahrt</a></li>
             <li><a href="index.html">Ind</a></li>
             <li><a href="index.html">In</a></li>
         </ul>
@@ -24,24 +24,31 @@
 <body>
 <section id="main">
     <article>
-        <h2>Hauptkontent</h2>
+        <h2 id="maincontent_headline">Bilder</h2>
         <img src="src/img/apartments_0.jpg" id="images" />
+        <img src="src/img/arrow_back.png"      id="back" />
         <img src="src/img/arrow.png"      id="next" />
-        <p>Im Laufe der nächsten Jahre begann sich nicht nur die akademische Welt für Google zu interessieren, sondern auch Investoren im Silicon Valley wurden auf die Suchmaschine aufmerksam. Im August 1998 stellte Andreas von Bechtolsheim, einer der Gründer von Sun Microsystems, Brin und Page einen Scheck über 100.000 $ aus. Google Inc. wurde offiziell registriert. Dank dieser Investition zog das neu eingetragene Unternehmen aus dem Studentenwohnheim in sein erstes Büro – die Garage von Susan Wojcicki (Mitarbeiterin Nr. 16 und aktuell CEO von YouTube) im kalifornischen Menlo Park. Klobige Desktop-Computer, eine Tischtennisplatte und leuchtend blaue Auslegware bestimmten nun die Arbeit von den frühen Morgen- bis in die späten Abendstunden. Die Tradition einer farbenfrohen Arbeitsumgebung hält bis heute an.</p>
+        <div id="gmaps">
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB27IflEAH4CLf825AvmiMbXE7NTK9obeA"></script><div style="width:30em;height:25em" id="gmeg_map_canvas"></div><script>var gmegMap, gmegMarker, gmegInfoWindow, gmegLatLng;function gmegInitializeMap(){gmegLatLng = new google.maps.LatLng(53.430492,10.367347);gmegMap = new google.maps.Map(document.getElementById("gmeg_map_canvas"),{zoom:15,center:gmegLatLng,mapTypeId:google.maps.MapTypeId.ROADMAP});gmegMarker = new google.maps.Marker({map:gmegMap,position:gmegLatLng});gmegInfoWindow = new google.maps.InfoWindow({content:'<b>Elbufer Apartments</b><br>Steinstraße 1<br>Geesthacht'});gmegInfoWindow.open(gmegMap,gmegMarker);}google.maps.event.addDomListener(window,"load",gmegInitializeMap);</script>
+        </div>
     </article>
     <aside>
-        <section class="box1">
-            <h2>Weitere Artikel</h2>
+        <section id="box1">
+            <h2>Ausstatung</h2>
             <ul>
-                <li>Bugs sind undokumentierte Features</li>
-                <li>Bugs sind undokumentierte Features</li>
-                <li>Bugs sind undokumentierte Features</li>
+                <li>Kochplatten<img id="listitem" src="src/img/listitem.png" /></li>
+                <li>Geschirr<img id="listitem" src="src/img/listitem.png" /></li>
+                <li>Besteck<img id="listitem" src="src/img/listitem.png" /></li>
+                <li>Kühlschrank<img id="listitem" src="src/img/listitem.png" /></li>
+                <li>Fernsehr<img id="listitem" src="src/img/listitem.png" /></li>
+                <li>Dusch-Bad<img id="listitem" src="src/img/listitem.png" /></li>
+                <li>Gemeinschaftsraum<img id="listitem" src="src/img/listitem.png" /></li>
             </ul>
         </section>
         <section class="box2">
-            <h2>Ein Textfeld</h2>
-            <p>Im Laufe der nächsten Jahre begann sich nicht nur die akademische Welt für Google zu interessieren, sondern auch Investoren im Silicon Valley wurden auf die Suchmaschine aufmerksam. Im August 1998 stellte Andreas von Bechtolsheim, einer der Gründer von Sun Microsystems, Brin und Page einen Scheck über 100.000 $ aus. Google Inc. wurde offiziell registriert. Dank dieser Investition zog das neu eingetragene Unternehmen aus dem Studentenwohnheim in sein erstes Büro – die Garage von Susan Wojcicki (Mitarbeiterin Nr. 16 und aktuell CEO von YouTube) im kalifornischen Menlo Park. Klobige Desktop-Computer, eine Tischtennisplatte und leuchtend blaue Auslegware bestimmten nun die Arbeit von den frühen Morgen- bis in die späten Abendstunden. Die Tradition einer farbenfrohen Arbeitsumgebung hält bis heute an.</p>
-        </section>
+            <h2>Umgebung</h2>
+
+            </section>
         <section class="box3">
             <h2>Kategorien</h2>
             <ul>
@@ -56,18 +63,9 @@
 <footer>
     <ul>
         <li>&copy; Musterfirma</li>
-        <li>Bugs sind undokumentierte Features</li>
+        <li>Impressum</li>
         <li>Bugs sind undokumentierte Features</li>
     </ul>
+    <script src="src/js/main.js"></script>
 </footer>
-<script>
-    var counter = 0;
-    $("#next").click(function(){
-        counter++;
-        if(counter > 5) {
-            counter = 0;
-        }
-            document.getElementById('images').src = 'src/img/apartments_' + counter + '.jpg';
-    });
-</script>
 </html>

@@ -14,10 +14,10 @@
     <h1>Musterwebsite</h1>
     <nav class="nav">
         <ul>
-            <li><a href="index.html" class="active">Index</a></li>
-            <li><a href="?page=approach">Anfahrt</a></li>
-            <li><a href="index.html">Ind</a></li>
-            <li><a href="index.html">In</a></li>
+            <li><a href="index.html" id="menuItem1">Start</a></li>
+            <li><a href="?page=approach" id="menuItem2">Anfahrt</a></li>
+            <li><a href="index.html" id="menuItem3">Ind</a></li>
+            <li><a href="index.html" id="menuItem4">In</a></li>
         </ul>
     </nav>
 </header>
@@ -28,13 +28,40 @@
         <img src="src/img/apartments_0.jpg" id="images" />
         <img src="src/img/arrow_back.png"      id="back" />
         <img src="src/img/arrow.png"      id="next" />
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
         <div id="gmaps">
-            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB27IflEAH4CLf825AvmiMbXE7NTK9obeA"></script><div style="width:30em;height:25em" id="gmeg_map_canvas"></div><script>var gmegMap, gmegMarker, gmegInfoWindow, gmegLatLng;function gmegInitializeMap(){gmegLatLng = new google.maps.LatLng(53.430492,10.367347);gmegMap = new google.maps.Map(document.getElementById("gmeg_map_canvas"),{zoom:15,center:gmegLatLng,mapTypeId:google.maps.MapTypeId.ROADMAP});gmegMarker = new google.maps.Marker({map:gmegMap,position:gmegLatLng});gmegInfoWindow = new google.maps.InfoWindow({content:'<b>Elbufer Apartments</b><br>Steinstraße 1<br>Geesthacht'});gmegInfoWindow.open(gmegMap,gmegMarker);}google.maps.event.addDomListener(window,"load",gmegInitializeMap);</script>
+            <img src="src/img/map.png" style="width:30em;height:25em" />
         </div>
     </article>
     <aside>
+        <section id="box3">
+            <h2>Kontakt</h2>
+            <ul>
+                <li>E-Mail: Max.Mustermann@gmail.com</li>
+                <li>Fax: 020203-2352</li>
+                <li>Telefon: 04152 84959</li>
+            </ul>
+        </section>
+        <section id="box2">
+            <h2>Umgebung</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            </section>
         <section id="box1">
-            <h2>Ausstatung</h2>
+            <h2>Ausstattung</h2>
             <ul>
                 <li>Kochplatten<img id="listitem" src="src/img/listitem.png" /></li>
                 <li>Geschirr<img id="listitem" src="src/img/listitem.png" /></li>
@@ -45,26 +72,15 @@
                 <li>Gemeinschaftsraum<img id="listitem" src="src/img/listitem.png" /></li>
             </ul>
         </section>
-        <section class="box2">
-            <h2>Umgebung</h2>
-
-            </section>
-        <section class="box3">
-            <h2>Kategorien</h2>
-            <ul>
-                <li>Bugs sind undokumentierte Features</li>
-                <li>Bugs sind undokumentierte Features</li>
-                <li>Bugs sind undokumentierte Features</li>
-            </ul>
-        </section>
     </aside>
 </section>
 </body>
 <footer>
     <ul>
-        <li>&copy; Musterfirma</li>
-        <li>Impressum</li>
-        <li>Bugs sind undokumentierte Features</li>
+        <span>
+            <li>&copy; Musterfirma</li>
+            <li><a href="impressum.html">Impressum</a></li>
+        </span>
     </ul>
     <script src="src/js/main.js"></script>
 </footer>

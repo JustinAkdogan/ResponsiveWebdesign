@@ -114,10 +114,6 @@ nav ul li a:hover{
     border-bottom: 0.185em solid ghostwhite;
 }
 
-nav ul li a.active{
-    border-bottom: 0.180em solid ghostwhite;
-}
-
 #main{
     display:block;
     width:96%;
@@ -170,7 +166,7 @@ nav ul li a.active{
 
 #main aside{
     display:inline-block;
-    width: 30.6%;
+    width: 31.1%;
     margin-left: 3%;
     padding:0em;
     vertical-align: top;
@@ -194,6 +190,16 @@ nav ul li a.active{
     padding-left: 2.1em;
 }
 
+#box2 p {
+    padding-left: 2.1em;
+}
+
+#box3 ul li {
+    padding-left: 2.1em;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 #box1 ul {
     margin-bottom: 1em;
 }
@@ -201,6 +207,13 @@ nav ul li a.active{
     line-height: 0em;
 }
 
+#box2 h2{
+    line-height: 0em;
+}
+
+#box2 h2{
+    line-height: 0em;
+}
 #gmaps{
     display: none;
 }
@@ -209,3 +222,15 @@ nav ul li a.active{
     width: 1.5em;
     padding-left: 0.3em;
 }
+
+footer{
+    position: fixed;
+    bottom: 0px;
+}
+
+footer ul li {
+    display: inline-block;
+    padding-left: 2em;
+    text-align: center;
+}
+

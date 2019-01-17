@@ -84,6 +84,10 @@ header{
     display:inline;
 }
 
+#menubar ul li a.menubutton{
+    display: none;
+}
+
 nav{
     display:block;
     height:2.5em;
@@ -223,14 +227,73 @@ nav ul li a:hover{
     padding-left: 0.3em;
 }
 
-footer{
-    position: fixed;
-    bottom: 0px;
+#impressum ul li {
+    list-style: none;
 }
 
-footer ul li {
-    display: inline-block;
-    padding-left: 2em;
+footer{
+    display: block;
+    background: #14485F;
     text-align: center;
 }
 
+footer ul {
+    display: block;
+    width: 100%;
+    max-width: 980px;
+    text-align: left;
+    margin:0px auto;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline;
+    font-size: 1em;
+    line-height: 2.8em;
+    color: white;
+    padding: 0em 0.625em 0em 0.625em;
+}
+
+footer ul li a{
+    color: white;
+    text-decoration: underline #5790f2;
+}
+
+/* Mobile Style */
+
+@media screen and (max-width: 800px){
+    body{
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #main aside, #main article{
+        width: 100%;
+        display: block;
+        margin: 0.625em 0em 0.625em 0em;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    nav.nav{
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 550px){
+    body{
+        font-size: 86%;
+    }
+    #menubar ul li a.menubutton{
+        display: block;
+    }
+    nav{
+        display:none;
+        height: auto;
+    }
+    nav ul li {
+        display: block;
+        margin: 0.3em 0em 0.3em 0em;
+    }
+}

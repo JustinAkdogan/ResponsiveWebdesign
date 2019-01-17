@@ -6,7 +6,6 @@ myHeadline = document.getElementById('maincontent_headline');
 //Counter Functionality for Images
 $("#next").click(function(){
     counter++;
-    console.log('NEXT: ' + counter)
     if(counter > 5) {
         counter = 0;
     }
@@ -14,7 +13,6 @@ $("#next").click(function(){
 });
 $("#back").click(function(){
     counter--;
-    console.log('BACK: ' + counter)
     if(counter < 0) {
         counter = 5;
     }
@@ -22,6 +20,12 @@ $("#back").click(function(){
 });
 
 
+//Script for Mobile Devices
+$(document).ready(function() {
+    $('.menubutton').click(function () {
+        $('.nav').slideToggle('slow');
+    });
+});
 
 //Show the Pagerelated elements and hide other Elements
 if(searchParams.has('page')){

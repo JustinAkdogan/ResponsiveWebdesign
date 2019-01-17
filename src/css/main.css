@@ -263,28 +263,28 @@ footer ul li a{
 }
 
 /* Mobile Style */
-
+/* 800 px*/
 @media screen and (max-width: 800px){
     body{
         font-size: 90%;
     }
 }
-
-@media screen and (max-width: 600px){
+/* 600 px*/
+@media screen and (max-width: 750px){
     #main aside, #main article{
         width: 100%;
         display: block;
         margin: 0.625em 0em 0.625em 0em;
     }
 }
-
-@media screen and (min-width: 550px) {
+/* min-width: 550px*/
+@media screen and (min-width: 750px) {
     nav.nav{
         display: block !important;
     }
 }
-
-@media screen and (max-width: 550px){
+/* 550 px*/
+@media screen and (max-width: 750px){
     body{
         font-size: 86%;
     }

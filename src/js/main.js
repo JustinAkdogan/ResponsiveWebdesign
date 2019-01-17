@@ -6,7 +6,7 @@ myHeadline = document.getElementById('maincontent_headline');
 //Counter Functionality for Images
 $("#next").click(function(){
     counter++;
-    if(counter > 5) {
+    if(counter > 4) {
         counter = 0;
     }
     document.getElementById('images').src = 'src/img/apartments_' + counter + '.jpg';
@@ -14,7 +14,7 @@ $("#next").click(function(){
 $("#back").click(function(){
     counter--;
     if(counter < 0) {
-        counter = 5;
+        counter = 4;
     }
     document.getElementById('images').src = 'src/img/apartments_' + counter + '.jpg';
 });
